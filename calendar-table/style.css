@@ -1,0 +1,54 @@
+.cal {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 25em;
+    font-family: "Lucida Grande", Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+.cal caption {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    line-height: 2;/* 2倍于em */
+    font-size: 1.5em;
+}
+.cal-weekend {
+    background-color: #fef0f0;
+    background-color: rgba(255, 0, 0, 0.05);/* 应用一些透明度，这是一种兼容性写法 */
+}
+.cal th,
+.cal td {
+    line-height: 3;
+    padding: 0;
+    width: 14.285%;
+}
+.cal td {
+    border: 1px solid #eee;/* 给单元格加上边框，增加辨识度 */
+}
+.cal thead {
+    border-bottom: 3px solid #666;
+}
+.cal a {
+    display: block;/* 调整为块元素，它就会撑满整个单元格，增加点击区域 */
+    text-decoration: none;
+    color: #2f273c;
+}
+.cal a:hover,
+.cal a:focus {
+    background-color: #cde7ca;/* 这里有3种染色，分别针对非本月，当前日，备选日，加上之前的周末一共4种染色 */
+    background-color: rgba(167, 240, 210, 0.3);
+}
+.cal-inactive {
+    background-color: #efefef;
+    color: #aaa;
+    cursor: not-allowed;
+}
+.cal-current {
+    background-color: #7d5977;
+    background-color: rgba(71, 14, 62, 0.6);
+    color: #fff;
+}
+.cal-current a {
+    color: #fff;
+}
+
