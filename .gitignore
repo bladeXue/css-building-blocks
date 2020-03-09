@@ -1,6 +1,9 @@
 # 忽略正在施工的目录
 mobile-components/
 
+# 忽略实验用和测试用文件夹
+test-front-end/
+
 # 忽略sass缓存
 .sass-cache/
 *.css.map
