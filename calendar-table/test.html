@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="comments_form" action="#" method="post">
+        <div class="fieldset-wrapper">
+            <fieldset>
+                <legend>Your contact details</legend>
+
+                <p class="field field-text">
+                    <label for="comment-author">Name:</label>
+                    <input name="comment-author" id="comment-author" type="text">
+                </p>
+
+                <p class="field field-text">
+                    <label for="comment-email">Email Address:</label>
+                    <input name="comment-email" id="comment-email" type="email">
+                </p>
+
+                <p class="field field-text">
+                    <label for="comment-url">Web Address:</label>
+                    <input name="comment-url" aria-describedby="comment-url-help" id="comment-url" type="url"
+                           placeholder="http://example.com">
+                    <span id="comment-url-help" role="tooltip" class="form-help">Fill in your URL if you have one. Make sure to include the ”http://”-part.</span>
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="fieldset-wrapper">
+            <fieldset>
+                <legend>Comments</legend>
+
+                <p class="field field-text">
+                    <label for="comment-text">Name:</label>
+                    <textarea name="comment-text" id="comment-text" cols="20" rows="10"></textarea>
+                </p>
+            </fieldset>
+        </div>
+
+        <div class="fieldset-wrapper">
+            <fieldset>
+                <legend>Remember Me</legend>
+
+                <p class="field">
+                    <label><input name="comment-remember" type="radio" value="yes">Yes</label>
+                </p>
+                <p class="field">
+                    <label><input name="comment-remember" type="radio" value="no" checked>No</label>
+                </p>
+            </fieldset>
+        </div>
+
+        <p class="field-submit">
+            <button id="submit" class="submit" name="submit" type="submit">Post comment</button>
+        </p>
+
+    </form>
+    
+</body>
+</html>
